@@ -10,8 +10,8 @@ for i in file.readlines():
     i = i.split('\t')
     gene = i[1]
     if gene == 'protein_coding':
-        aa_count.append(int(i[17])// 3)
-        if int(i[17])// 3 > 2000:
+        aa_count.append(int(i[17])// 3 - 1)
+        if int(i[17])// 3 - 1 > 2000:
             A = True
     if A and gene == 'with_protein':
         print(i[13], '; lenght: ', aa_count[-1], sep='')
