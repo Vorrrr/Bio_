@@ -2,7 +2,7 @@ r_rna = 0
 t_rna = 0
 oth = ''
 total = 0
-file = open('C:\Надя\GCF_013343195.2_ASM1334319v3_feature_table.txt', 'r')
+file = open(input(), 'r')
 for i in file.readlines():
     i = i.split('\t')
     gene = i[1]
